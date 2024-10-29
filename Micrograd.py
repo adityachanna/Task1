@@ -1,9 +1,13 @@
+import torch
+import os
+os.environ["PATH"] += os.pathsep + r"C:\Program Files\Graphviz\bin"
 class Value:
     def __init__(self, data, _children=(), _op=''):
         self.data = data
         self.grad = 0
         self._prev = set(_children)
         self._backward = lambda: None
+        self._op=_op
     def __add__(self, other):
         out = Value(self.data + other.data, (self, other), '+')
         def _backward():
