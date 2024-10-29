@@ -1,5 +1,5 @@
 import os
-from micrograd import Value
+from Micrograd import Value
 os.environ["PATH"] += os.pathsep + r"C:\Program Files\Graphviz\bin"
 from graphviz import Digraph
 def trace(root):
