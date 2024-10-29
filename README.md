@@ -8,7 +8,6 @@ Table of Contents
     Usage
     Code Explanation
     Graph Visualization
-    License
 
 Features
 
@@ -155,32 +154,3 @@ def draw_dot(root):
 e.backward()
 dot = draw_dot(e)
 dot.render('computation_graph', view=True)
-
-Contributing
-
-Contributions are welcome! Please follow these steps:
-
-    Fork the repository.
-    Create a new branch:
-
-    bash
-
-git checkout -b feature-branch
-
-Commit your changes:
-
-bash
-
-git commit -m "Add a new feature"
-
-Push to your branch:
-
-bash
-
-    git push origin feature-branch
-
-    Open a Pull Request.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
